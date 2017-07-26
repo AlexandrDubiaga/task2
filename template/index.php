@@ -28,5 +28,5 @@ echo "Add A+B in memory M+:".$obj->mPlus();
 echo "<br>";
 echo "Minus A from digit in memory M-:".$obj->mMinus();
 echo "<br>";
-echo "Procent A B: ".$obj->procent();
+echo "Procent A B: ".$obj->procent()." %";
 ?>

@@ -34,18 +34,18 @@ class Calculator{
 			echo ZERO;				
 		}else return $this->a / $this->b;
 	}
-	public function sqrtA(){
-		return sqrt($this->a);
-	}
-	
+	public function sqrtA()
+    {
+        return sqrt($this->a);
+    }
 	public function sqrtB(){
 		return sqrt($this->b);
 	}
 	public function MS(){
-		$this->aMemory = $this->a;
+		$this->aMemory = $this->plus();
 	}
 	public function MR(){
-			return $this->aMemory;
+			return $this->plus();
 	}
 	public function MC(){
 		$this->aMemory = NULL;	
