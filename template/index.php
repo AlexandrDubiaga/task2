@@ -1,0 +1,32 @@
+<?php
+echo "A: ".$obj->getA();
+echo "<br>";
+echo "B: ".$obj->getB();
+echo "<br>";
+echo "RESULTS FUNCTIONS<br>";
+echo "Plus: ".$obj->plus();
+echo "<br>";
+echo "Minus: ".$obj->minus();
+echo "<br>";
+echo "Mnoj: ".$obj->mnoj();
+echo "<br>";
+echo "Delete: ".$obj->delete();
+echo "<br>";
+echo "SQRT A: ".$obj->sqrtA();
+echo "<br>";
+echo "SQRT B: ".$obj->sqrtB();
+echo "<br>";
+echo "Digit A saved MS : ".$obj->MS();
+echo "<br>";
+echo "Digit from memory MR : ".$obj->MR();
+echo "<br>";
+echo "Clear memory MC".$obj->MC();
+echo "<br>";
+echo "Cleared digit from memory ".$obj->MR();
+echo "<br>";
+echo "Add A+B in memory M+:".$obj->mPlus();
+echo "<br>";
+echo "Minus A from digit in memory M-:".$obj->mMinus();
+echo "<br>";
+echo "Procent A B: ".$obj->procent();
+?>
