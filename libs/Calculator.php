@@ -42,7 +42,7 @@ class Calculator{
 		return sqrt($this->b);
 	}
 	public function MS(){
-		$this->aMemory = $this->plus();
+		return $this->aMemory = $this->plus();
 	}
 	public function MR(){
 			return $this->plus();
