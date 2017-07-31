@@ -1,67 +1,88 @@
 <?php
-class Calculator{
+class Calculator
+{
 	public $a;
 	public $b;
 	public $aMemory;
 
-	public function setA($a){
+	public function setA($a)
+	{
 		$this->a = $a;
 	}
-	public function setB($b){
+	public function setB($b)
+	{
 		$this->b = $b;
 	}
-	public function getA(){
+	public function getA()
+	{
 		return $this->a;	
 	}
-	public function getB(){
+	public function getB()
+	{
 		return $this->b;	
 	}
 
-	public function plus(){
+	public function plus()
+	{
 		return $this->a + $this->b;	
 	}
-	public function minus(){
-		if($this->a < $this->b){
+	public function minus()
+	{
+		if($this->a < $this->b)
+		{
 			return $this->b - $this->a;	
 		}
-		else return $this->a - $this->b;
+		else{
+            return $this->a - $this->b;
+		}
 	}
-	public function mnoj(){
+	public function mnoj()
+	{
 		return $this->a * $this->b;
 	}
-	public function delete(){
+	public function delete()
+	{
 		if($this->a == 0 || $this->b == 0){
-			echo ZERO;				
-		}else return $this->a / $this->b;
+			return false;
+		}else
+		{
+            return $this->a / $this->b;
+		}
+		return false;
 	}
 	public function sqrtA()
     {
         return sqrt($this->a);
     }
-	public function sqrtB(){
+	public function sqrtB()
+	{
 		return sqrt($this->b);
 	}
-	public function MS(){
+	public function MS()
+	{
 		return $this->aMemory = $this->plus();
 	}
-	public function MR(){
+	public function MR()
+	{
 			return $this->plus();
 	}
-	public function MC(){
+	public function MC()
+	{
 		$this->aMemory = NULL;	
 	}
-	public function mPlus(){
+	public function mPlus()
+	{
 		return $this->aMemory = $this->plus();
 	}
-	public function mMinus(){
+	public function mMinus()
+	{
 		return $this->aMemory -$this->a;	
 	}
 
-	public function procent(){
+	public function procent()
+	{
 		return (($this->a / $this->b) * 100);
 	}
-
 }
-
 
 ?>
