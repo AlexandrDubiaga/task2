@@ -1,9 +1,9 @@
 <?php
 class Calculator
 {
-	public $a;
-	public $b;
-	public $aMemory;
+	protected $a;
+	protected $b;
+	protected $aMemory;
 
 	public function setA($a)
 	{
