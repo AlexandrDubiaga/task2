@@ -13,7 +13,7 @@ $multiplication = $obj->mnoj();
 $division = $obj->delete();
 if(!$division)
 {
-    echo ZERO;
+    $zero = ZERO;
 }
 $rootOfNumberA = $obj->sqrtA();
 $rootOfNumberB = $obj->sqrtB();
