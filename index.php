@@ -4,7 +4,7 @@ include('config.php');
 
 $obj = new Calculator();
 $obj->setA(5);
-$obj->setB(15);
+$obj->setB(0);
 $a = $obj->getA();
 $b = $obj->getB();
 $summation = $obj->plus();
